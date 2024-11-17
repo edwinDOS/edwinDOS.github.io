@@ -11,6 +11,36 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+    
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 100%;
+          padding: 0px;
+          /* height: 300px; Should be removed. Only for demonstration */
+        }
+    
+        /* Clear floats after the columns */
+        .row::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        /* Responsive layout */
+        @media only screen and (min-width: 320px) {
+          .column {
+            width: 50%; } }
+        @media only screen and (min-width: 540px) {
+          .column {
+            width: 33%; } }
+    
+        </style>
+
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -30,6 +60,82 @@
     <main id="content" class="main-content" role="main">
       {{ content }}
 
+      <!-- 3-COL -->
+<!-- hr/ -->
+<div class="row">
+    <div class="column">
+      <h4>Publications</h4>
+      <p>
+        <ul>
+          <li><a href="https://scholar.google.com/citations?user=A_hsAccAAAAJ&hl">Google Scholar</a></li>
+          <li><a href="https://es.linkedin.com/in/edwin-dos">LinkedIn</a></li>
+          <li><a href="https://orcid.org/0000-0003-0791-860X">ORCID</a></li>
+          <li><a href="https://www.webofscience.com/wos/author/record/F-1999-2016">WOS</a></li>
+          <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57195278252">Scopus</a></li>
+          <li><a href="https://www.researchgate.net/profile/Edwin-Daniel-Ona">Research Gate</a></li>
+        </ul>
+      </p>
+    </div>
+    <div class="column"> <!--  style="background-color:#f2f2f2;" -->
+      <h4>Open Source</h4>
+      <p>
+        <ul>
+          <li><a href="https://github.com/edwinDOS">GitHub</a></li>
+          <!-- <li><a href="https://sourceforge.net/u/jgvictores/profile">SourceForge</a></li> -->
+        </ul>
+      </p>
+    </div>
+    <div class="column">
+      <h4>Social Media</h4>
+      <p>
+        <ul>
+          <li><a href="https://x.com/edwinDOS_">Twitter</a></li>
+          <li><a href="https://www.youtube.com/@roboticaasistencialuc3m/">YouTube</a></li>
+          <!-- <li><a href="https://www.slideshare.net/JuanGVictores">SlideShare</a></li> -->
+        </ul>
+      </p>
+    </div>
+  </div>
+  
+      <!-- 3-COL -->
+  <hr/>
+  <div class="row">
+    <div class="column">
+      <h4>Family's Publications</h4>
+      <p>
+        <ul>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=o%C3%B1a-simba%C3%B1a">Oña-Simbaña, ED</a></li>
+          <li><a href="https://ieeexplore.ieee.org/author/37086384902">E. Oña</a></li>
+        </ul>
+      </p>
+    </div>
+    <div class="column">
+      <h4>Relevant Projects</h4>
+      <p>
+        <ul>
+          <li><a href="http://roboticslab.uc3m.es/roboticslab/project/robohealth">ROBOHEALTH</a></li>
+          <li><a href="http://roboticslab.uc3m.es/roboticslab/project/roboespas">ROBOESPAS</a></li>
+          <li><a href="http://roboticslab.uc3m.es/roboticslab/project/roboasset">ROBOASSET</a></li>
+          <li><a href="http://roboticslab.uc3m.es/roboticslab/project/asepeyo-sg">ASEPEYO-SG</a></li>
+        </ul>
+      </p>
+    </div>
+    <div class="column"> <!--  style="background-color:#f2f2f2;" -->
+      <h4>Teaching</h4>
+      <p>
+        <ul>
+          <li><a href="https://www.uc3m.es/grado/robotica">Industrial Robotics</a></li>
+          <li><a href="https://www.uc3m.es/grado/tecnologias-industriales">Industrial Automation</a></li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  
+        </section>
+  
+      </div>
+
+      <!-- FOOTER  -->  
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
