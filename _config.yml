@@ -3,7 +3,11 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 title: [Edwin Daniel Oña Simbaña]
-description: [Curriculum Vitae]
+description: [Curriculum Vitae
+- Assistant Professor at [UC3M](https://www.uc3m.es)
+- Researcher in Rehabilitation Robotics and Games for Health at [RoboticsLab (UC3M)](http://roboticslab.uc3m.es/roboticslab/people/e-d-ona)
+- PhD in Electrical Engineering, Electronics and Automation
+]
 
 show_downloads: [false]
 #google_analytics: [Your Google Analytics tracking ID]
