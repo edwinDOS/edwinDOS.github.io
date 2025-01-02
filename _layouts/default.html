@@ -1,141 +1,151 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
+<html lang="{{ site.lang | default: " en-US" }}">
 
-{% seo %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000066">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
+<head>
+  <meta charset="UTF-8">
 
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-    
-        /* Create three equal columns that floats next to each other #157878*/
-        .column {
-          float: left;
-          width: 100%;
-          padding: 0px;
-          /* height: 300px; Should be removed. Only for demonstration */
-        }
-    
-        /* Clear floats after the columns */
-        .row::after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        /* Responsive layout */
-        @media only screen and (min-width: 320px) {
-          .column {
-            width: 50%; } }
-        @media only screen and (min-width: 540px) {
-          .column {
-            width: 33%; } }
-    
-        </style>
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style"
+    type="text/css" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000066">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% include head-custom.html %}
 
-  </head>
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-    </header>
+    /* Create three equal columns that floats next to each other #157878*/
+    .column {
+      float: left;
+      width: 100%;
+      padding: 0px;
+      /* height: 300px; Should be removed. Only for demonstration */
+    }
 
-    <main id="content" class="main-content" role="main">
-      {{ content }}
+    /* Clear floats after the columns */
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-      <!-- 3-COL -->
-<!-- hr/ -->
-<hr/>
-<div class="row">
-    <div class="column">
-      <h4>Publications</h4>
-      <p>
+    /* Responsive layout */
+    @media only screen and (min-width: 320px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    @media only screen and (min-width: 540px) {
+      .column {
+        width: 33%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+  <header class="page-header" role="banner">
+    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline
+      }}</h2>
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    {{ content }}
+
+    <!-- 3-COL -->
+    <!-- hr/ -->
+    <hr />
+    <div class="row">
+      <div class="column">
+        <h4>Publications</h4>
+        <p>
         <ul>
-          <li><a href="https://scholar.google.com/citations?user=A_hsAccAAAAJ&hl">Google Scholar</a></li>          
+          <li><a href="https://scholar.google.com/citations?user=A_hsAccAAAAJ&hl">Google Scholar</a></li>
           <li><a href="https://orcid.org/0000-0003-0791-860X">ORCID</a></li>
           <li><a href="https://www.webofscience.com/wos/author/record/F-1999-2016">WOS</a></li>
-          <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57195278252">Scopus</a></li>          
+          <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57195278252">Scopus</a></li>
         </ul>
-      </p>
-    </div>
-    <div class="column"> <!--  style="background-color:#f2f2f2;" -->
-      <h4>Open Source</h4>
-      <p>
+        </p>
+      </div>
+      <div class="column"> <!--  style="background-color:#f2f2f2;" -->
+        <h4>Open Source</h4>
+        <p>
         <ul>
           <li><a href="https://github.com/edwinDOS">GitHub</a></li>
           <li><a href="https://www.researchgate.net/profile/Edwin-Daniel-Ona">Research Gate</a></li>
-          <!-- <li><a href="https://sourceforge.net/u/jgvictores/profile">SourceForge</a></li> -->
         </ul>
-      </p>
-    </div>
-    <div class="column">
-      <h4>Social Media</h4>
-      <p>
+        </p>
+      </div>
+      <div class="column">
+        <h4>Social Media</h4>
+        <p>
         <ul>
           <li><a href="https://es.linkedin.com/in/edwin-dos">LinkedIn</a></li>
           <li><a href="https://x.com/edwinDOS_">Twitter</a></li>
           <li><a href="https://www.youtube.com/@roboticaasistencialuc3m/">YouTube</a></li>
-          <!-- <li><a href="https://www.slideshare.net/JuanGVictores">SlideShare</a></li> -->
         </ul>
-      </p>
+        </p>
+      </div>
     </div>
-  </div>
-  
-      <!-- 3-COL -->
-  <hr/>
-  <div class="row">
-    <div class="column">
-      <h4>Other Publications</h4>
-      <p>
+
+    <!-- 3-COL -->
+    <hr />
+    <div class="row">
+      <div class="column">
+        <h4>Other Publications</h4>
+        <p>
         <ul>
           <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=o%C3%B1a-simba%C3%B1a">Oña-Simbaña, ED</a></li>
           <li><a href="https://ieeexplore.ieee.org/author/37086384902">E. Oña</a></li>
         </ul>
-      </p>
-    </div>
-    <div class="column">
-      <h4>Relevant Projects</h4>
-      <p>
+        </p>
+      </div>
+      <div class="column">
+        <h4>Relevant Projects</h4>
+        <p>
         <ul>
-          <li><a href="http://roboticslab.uc3m.es/roboticslab/project/robohealth">ROBOHEALTH</a></li>
-          <li><a href="http://roboticslab.uc3m.es/roboticslab/project/roboespas">ROBOESPAS</a></li>
-          <li><a href="http://roboticslab.uc3m.es/roboticslab/project/roboasset">ROBOASSET</a></li>
-          <li><a href="http://roboticslab.uc3m.es/roboticslab/project/asepeyo-sg">ASEPEYO-SG</a></li>
+          <li><a href="https://roboticslab.uc3m.es/project/robohealth/">ROBOHEALTH</a></li>
+          <li><a href="https://roboticslab.uc3m.es/project/roboespas/">ROBOESPAS</a></li>
+          <li><a href="https://roboticslab.uc3m.es/project/roboasset/">ROBOASSET</a></li>
+          <li><a href="https://roboticslab.uc3m.es/project/asepeyo-sg/">ASEPEYO-SG</a></li>
         </ul>
-      </p>
-    </div>
-    <div class="column"> <!--  style="background-color:#f2f2f2;" -->
-      <h4>Teaching</h4>
-      <p>
+        </p>
+      </div>
+      <div class="column"> <!--  style="background-color:#f2f2f2;" -->
+        <h4>Teaching</h4>
+        <p>
         <ul>
           <li><a href="https://www.uc3m.es/grado/robotica">Industrial Robotics</a></li>
           <li><a href="https://www.uc3m.es/grado/tecnologias-industriales">Industrial Automation</a></li>
         </ul>
-      </p>
-    </div>
-  </div>
-  
-        </section>
-  
+        </p>
       </div>
+    </div>
 
-      <!-- FOOTER  -->  
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> with theme modified from <a href="https://pages-themes.github.io/cayman/">Cayman</a></span>
-      </footer>
-    </main>
-  </body>
+    </section>
+
+    </div>
+
+    <!-- FOOTER  -->
+    <footer class="site-footer">
+      {% if site.github.is_project_page %}
+      <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>
+        is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      {% endif %}
+      <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>
+        with theme modified from <a href="https://pages-themes.github.io/cayman/">Cayman</a></span>
+    </footer>
+  </main>
+</body>
+
 </html>
